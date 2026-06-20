@@ -4,6 +4,7 @@ work/
 *.dat
 
 # Simulation outputs and databases
+*.ini
 *.ucdb
 *.wlf
 *.vstf
