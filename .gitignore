@@ -1,0 +1,12 @@
+# Compiled libraries
+work/
+*.mti
+*.dat
+
+# Simulation outputs and databases
+*.ucdb
+*.wlf
+*.vstf
+
+# Editor files
+.vscode/

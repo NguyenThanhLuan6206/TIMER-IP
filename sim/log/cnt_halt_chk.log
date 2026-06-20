@@ -1,0 +1,56 @@
+# vsim -suppress 12110 -coverage -l cnt_halt_chk.log -c testbench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit cnt_halt_chk.ucdb; log -r /*;run -all" 
+# Start time: 23:16:14 on Jun 20,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.testbench
+# Loading work.timer_top
+# Loading work.apbSlave
+# Loading work.TCR
+# Loading work.ControlCounter
+# Loading work.Counter64b
+# Loading work.TCMP0
+# Loading work.TCMP1
+# Loading work.Interrupt
+# Loading work.THCSR
+# coverage save -onexit cnt_halt_chk.ucdb
+#  log -r /*
+# run -all
+# Write to addr = 000, data = 00000001, strb = 1111
+# Write to addr = 01c, data = 00000000, strb = 1111
+# PASS TEST 1
+# Write to addr = 01c, data = 00000001, strb = 1111
+# PASS TEST 2
+# PASS TEST 3
+# COMPLETE RESET ALL THE SYSTEM
+# Write to addr = 000, data = 00000203, strb = 1111
+# Write to addr = 01c, data = 00000001, strb = 1111
+# PASS TEST 4
+# Read from addr = 01c, value = 00000003
+# PASS                THCSR: read 00000003 as expected
+# PASS TEST 5
+# COMPLETE RESET ALL THE SYSTEM
+# TEST 6
+# Write to addr = 000, data = 00000803, strb = 1111
+# Write to addr = 01c, data = 00000001, strb = 1111
+# Write to addr = 000, data = 00000802, strb = 1111
+# Write to addr = 000, data = 00000003, strb = 1111
+# PASS TEST 6
+# tim_pwrite = 0
+# ** Note: $finish    : ../tb/testbench.v(51)
+#    Time: 12047 ns  Iteration: 0  Instance: /testbench
+# Saving coverage database on exit...
+# End time: 23:16:15 on Jun 20,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

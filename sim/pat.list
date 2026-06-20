@@ -1,0 +1,10 @@
+cnt_counting_chk
+cnt_ctrl_chk
+cnt_halt_chk
+interrupt_chk
+reg_byte_access
+reg_falling_edge
+reg_int_chk
+reg_pselverr_chk
+reg_wr_chk
+apb_protocol_chk

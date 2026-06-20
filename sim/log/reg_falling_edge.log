@@ -1,0 +1,44 @@
+# vsim -suppress 12110 -coverage -l reg_falling_edge.log -c testbench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit reg_falling_edge.ucdb; log -r /*;run -all" 
+# Start time: 23:16:22 on Jun 20,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.testbench
+# Loading work.timer_top
+# Loading work.apbSlave
+# Loading work.TCR
+# Loading work.ControlCounter
+# Loading work.Counter64b
+# Loading work.TCMP0
+# Loading work.TCMP1
+# Loading work.Interrupt
+# Loading work.THCSR
+# coverage save -onexit reg_falling_edge.ucdb
+#  log -r /*
+# run -all
+# Write to addr = 004, data = 00000aaa, strb = 1111
+# Write to addr = 008, data = 00000aaa, strb = 1111
+# Write to addr = 000, data = 00000001, strb = 1111
+# Write to addr = 000, data = 00000000, strb = 1111
+# Read from addr = 004, value = 00000000
+# PASS                 TDR0: read 00000000 as expected
+# Read from addr = 008, value = 00000000
+# PASS                 TDR1: read 00000000 as expected
+# tim_pwrite = 0
+# ** Note: $finish    : ../tb/testbench.v(51)
+#    Time: 1355 ns  Iteration: 0  Instance: /testbench
+# Saving coverage database on exit...
+# End time: 23:16:24 on Jun 20,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1
