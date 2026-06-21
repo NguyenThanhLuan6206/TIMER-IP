@@ -1,0 +1,20 @@
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+Start time: 09:12:42 on Jun 21,2026
+vlog -suppress 12110 -f compile.f 
+-- Compiling module TCMP0
+-- Compiling module TCMP1
+-- Compiling module TCR
+-- Compiling module THCSR
+-- Compiling module ControlCounter
+-- Compiling module apbSlave
+-- Compiling module Counter64b
+-- Compiling module Interrupt
+-- Compiling module timer_top
+-- Compiling module test_bench
+-- Compiling module mod_golden_cnt
+
+Top level modules:
+	test_bench
+End time: 09:12:42 on Jun 21,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1

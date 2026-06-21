@@ -1,0 +1,9 @@
+../../rtl/TCMP0.v
+../../rtl/TCMP1.v
+../../rtl/TCR.v
+../../rtl/THCSR.v
+../../rtl/ControlCounter.v
+../../rtl/apbSlave.v
+../../rtl/Counter64b.v
+../../rtl/Interrupt.v
+../../rtl/timer_top.v
